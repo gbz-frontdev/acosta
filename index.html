@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acosta Flooring - Calidad y Diseño</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <!-- <div class="logo">Acosta Flooring</div> -->
+        <img src="./LETRAS BLANCAS.png" alt="" class="logo">
+        <nav class="main-nav" id="mainNavMenu">
+            <!-- ID añadido para JS -->
+            <a href="#home">HOME</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#about">ABOUT US</a>
+            <a href="#contact" class="contact-us-nav-link">CONTACT US</a>
+        </nav>
+        <a href="#" class="cta-button header-cta" id="openQuoteFormBtn">
+            Cotizar Ahora <span class="arrow">➔</span>
+        </a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggleButton" aria-label="Toggle Menu" aria-expanded="false">
+            <!-- ID añadido y aria-expanded -->
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <aside class="quote-form-panel" id="quoteFormPanel">
+        <button class="close-quote-panel" id="closeQuotePanelBtn" aria-label="Cerrar formulario">×</button>
+        <h3>Solicitar Cotización</h3>
+        <p>Completa tus datos y nos pondremos en contacto a la brevedad.</p>
+        <form id="quoteRequestForm">
+            <div class="form-group">
+                <label for="quoteName">Nombre Completo:</label>
+                <input type="text" id="quoteName" name="quoteName" required>
+            </div>
+            <div class="form-group">
+                <label for="quoteEmail">Correo Electrónico:</label>
+                <input type="email" id="quoteEmail" name="quoteEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="quotePhone">Teléfono:</label>
+                <input type="tel" id="quotePhone" name="quotePhone">
+            </div>
+            <div class="form-group">
+                <label for="quoteService">Tipo de Servicio Requerido:</label>
+                <select id="quoteService" name="quoteService">
+                    <option value="">Selecciona un servicio...</option>
+                    <option value="instalacion_madera">Instalación Piso de Madera</option>
+                    <option value="instalacion_laminado">Instalación Piso Laminado</option>
+                    <option value="instalacion_ceramica">Instalación Piso Cerámico/Porcelanato</option>
+                    <option value="pulido_restauracion">Pulido y Restauración</option>
+                    <option value="otro">Otro (especificar)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="quoteMessage">Mensaje Adicional (detalles del proyecto):</label>
+                <textarea id="quoteMessage" name="quoteMessage" rows="4"></textarea>
+            </div>
+            <button type="submit" class="submit-quote-btn">Enviar Solicitud</button>
+        </form>
+    </aside>
+    <div class="overlay-backdrop" id="overlayBackdrop"></div>
+
+
+    <main>
+        <section class="hero-slider" id="home">
+            <div class="slider-background-container"></div>
+            <div class="slider-content-wrapper">
+                <div class="slider-main-content">
+                    <div class="slide active">
+                        <div class="slide-main-title-wrapper">
+                            <h1 class="slide-main-title">Excellence<br>And Sustainability</h1>
+                        </div>
+                        <div class="slide-text-content">
+                            <p class="tagline">Compromiso con la calidad<br>y el medio ambiente.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-main-title-wrapper">
+                            <h1 class="slide-main-title">Madera<br>Premium</h1>
+                        </div>
+                        <div class="slide-text-content">
+                            <p class="tagline">Elegancia Natural<br>Para tu Hogar.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-main-title-wrapper">
+                            <h1 class="slide-main-title">Diseños<br>Modernos</h1>
+                        </div>
+                        <div class="slide-text-content">
+                            <p class="tagline">Innovación<br>Bajo tus Pies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-fixed-description">
+                    <p>Creamos espacios excepcionales con la calidad y el diseño que mereces. Explora nuestras
+                        soluciones en pisos.</p>
+                </div>
+            </div>
+            <div class="slider-nav"></div>
+            <div class="slider-controls">
+                <button class="slider-arrow prev" aria-label="Anterior">‹</button>
+                <button class="slider-arrow next" aria-label="Siguiente">›</button>
+            </div>
+        </section>
+
+        <section class="about-us-section" id="about">
+            <div class="container">
+                <div class="about-content-grid">
+                    <div class="about-text-column">
+                        <p class="eyebrow-text">PASIÓN POR LOS DETALLES, COMPROMISO CON LA CALIDAD.</p>
+                        <h2>Tu Aliado Experto en Pisos en [Tu Ciudad/Región]</h2>
+                        <p>En Acosta Flooring, convertimos tus ideas en realidad. Con años de experiencia en la
+                            industria, nuestro equipo de profesionales se dedica a ofrecer soluciones de pisos que no
+                            solo embellecen tus espacios, sino que también reflejan tu estilo único y perduran en el
+                            tiempo.</p>
+                        <p>Entendemos que cada proyecto es único. Por eso, trabajamos de cerca contigo, desde la
+                            selección de materiales hasta la instalación final, asegurando un resultado impecable que
+                            supere tus expectativas.</p>
+                        <ul class="benefits-list">
+                            <li><span class="checkmark">✔</span> Materiales de Primera Calidad</li>
+                            <li><span class="checkmark">✔</span> Asesoramiento Personalizado</li>
+                            <li><span class="checkmark">✔</span> Diseños Innovadores y Clásicos</li>
+                            <li><span class="checkmark">✔</span> Instalación Profesional y Detallista</li>
+                            <li><span class="checkmark">✔</span> Compromiso con la Satisfacción</li>
+                            <li><span class="checkmark">✔</span> Proyectos Entregados a Tiempo</li>
+                        </ul>
+                    </div>
+                    <div class="about-image-column">
+                        <div class="image-wrapper">
+                            <img src="./imagen1.webp" alt="Interior elegante con piso de madera Acosta Flooring">
+                            <div class="stats-overlay">
+                                <div class="stat-item">
+                                    <span class="stat-number">15+</span>
+                                    <span class="stat-label">Años de Experiencia</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">250+</span>
+                                    <span class="stat-label">Proyectos Completados</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Clientes Satisfechos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="before-after-section" id="gallery">
+            <div class="container">
+                <p class="eyebrow-text text-center">INSPÍRATE CON LA TRANSFORMACIÓN</p>
+                <h2 class="section-title text-center">Renovaciones Impactantes, Resultados Duraderos</h2>
+                <p class="section-description text-center">
+                    Descubre cómo convertimos espacios comunes en extraordinarios. Ve el poder de una renovación
+                    profesional con Acosta Flooring.
+                </p>
+                <div class="comparison-gallery-grid">
+                    <div class="image-comparison">
+                        <div class="img-comp-img img-comp-before">
+                            <img src="./imagen1.webp" alt="Piso de terraza antes de la renovación">
+                            <span class="ba-label before-label">Antes</span>
+                        </div>
+                        <div class="img-comp-img img-comp-after">
+                            <img src="./imagen2.webp" alt="Piso de terraza renovado y moderno">
+                            <span class="ba-label after-label">Después</span>
+                        </div>
+                        <div class="comparison-slider">
+                            <div class="slider-handle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-comparison">
+                        <div class="img-comp-img img-comp-before">
+                            <img src="./imagen3.webp" alt="Piso de madera desgastado antes de la renovación">
+                            alt="Piso interior desgastado antes de la renovación">
+                            <span class="ba-label before-label">Antes</span>
+                        </div>
+                        <div class="img-comp-img img-comp-after">
+                            <img src="./imagen4.webp" alt="Piso interior de madera nuevo y brillante">
+                            <span class="ba-label after-label">Después</span>
+                        </div>
+                        <div class="comparison-slider">
+                            <div class="slider-handle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-cta-container">
+                    <a href="#full-gallery" class="gallery-cta-button">Ver Galería Completa de Proyectos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <p class="eyebrow-text text-center">TESTIMONIOS</p>
+                <h2 class="section-title text-center">Lo Que Nuestros Clientes Dicen</h2>
+                <p class="section-description text-center">
+                    La satisfacción de nuestros clientes es nuestra mayor recompensa. Aquí algunas opiniones sobre
+                    nuestro trabajo.
+                </p>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"El equipo de Acosta Flooring fue excepcional. Desde el presupuesto
+                            hasta la instalación final, todo fue profesional y el resultado superó nuestras
+                            expectativas. ¡Nuestro nuevo piso de madera es hermoso!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/google_logo_icon_147285.png"
+                                alt="Google Logo" class="source-icon">
+                            <div class="author-details">
+                                <span class="author-name">Laura Martínez</span>
+                                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"Contratamos a Acosta Flooring para un proyecto comercial y quedamos
+                            impresionados con su eficiencia y la calidad del trabajo. Cumplieron con los plazos y el
+                            presupuesto. Altamente recomendados."</p>
+                        <div class="testimonial-author">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/600px-Facebook_f_logo_%282019%29.svg.png"
+                                alt="Facebook Logo" class="source-icon">
+                            <div class="author-details">
+                                <span class="author-name">Carlos Rodríguez</span>
+                                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star-half-alt"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text">"¡Increíble transformación! Acosta Flooring renovó por completo el
+                            piso de nuestra casa. Son atentos, detallistas y el precio fue justo. Definitivamente los
+                            volveremos a llamar para futuros proyectos."</p>
+                        <div class="testimonial-author">
+                            <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/google_logo_icon_147285.png"
+                                alt="Google Logo" class="source-icon">
+                            <div class="author-details">
+                                <span class="author-name">Ana Gómez</span>
+                                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services-section" id="services">
+            <h2>Nuestros Servicios</h2>
+            <p>Acosta Flooring se especializa en una amplia gama de servicios para transformar tus suelos:</p>
+            <ul>
+                <li>Instalación de pisos de madera noble y de ingeniería</li>
+                <li>Colocación experta de laminados y vinílicos de alta durabilidad</li>
+                <li>Diseño e instalación de pisos de cerámica y porcelanato</li>
+                <li>Pulido, restauración y mantenimiento de pisos existentes</li>
+                <li>Soluciones personalizadas para proyectos residenciales y comerciales</li>
+            </ul>
+            <p>¡Contáctanos para descubrir cómo podemos ayudarte!</p>
+        </section>
+    </main>
+
+    <footer class="site-footer-main" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-column footer-about">
+                <h3 class="footer-logo">Acosta Flooring</h3>
+                <p>Transformando tus espacios con pisos de calidad excepcional y diseño innovador. Tu satisfacción es
+                    nuestra prioridad.</p>
+                <div class="footer-social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="Houzz"><i class="fab fa-houzz"></i></a>
+                </div>
+            </div>
+            <div class="footer-column footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> [Tu Dirección Aquí], [Tu Ciudad]</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">(123) 456-7890</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@acostaflooring.com">info@acostaflooring.com</a>
+                </p>
+                <p><i class="fas fa-clock"></i> Lun - Vie: 9:00 AM - 5:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="currentYear"></span> Acosta Flooring. Todos los derechos reservados. Diseño por [Tu
+                Nombre/Empresa]</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
