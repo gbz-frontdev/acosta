@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acosta Flooring - Calidad y Diseño</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Acosta Flooring - Calidad y Diseño</title>    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="google-reviews.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;700&display=swap"
@@ -17,13 +17,13 @@
 
     <header class="site-header">
         <!-- <div class="logo">Acosta Flooring</div> -->
-        <img src="./LETRAS BLANCAS.png" alt="" class="logo">
-        <nav class="main-nav" id="mainNavMenu">
+        <img src="./LETRAS BLANCAS.png" alt="" class="logo">        <nav class="main-nav" id="mainNavMenu">
             <!-- ID añadido para JS -->
             <a href="#home">HOME</a>
-            <a href="#gallery">GALLERY</a>
+            <a href="./gallery.html">GALLERY</a>
             <a href="#about">ABOUT US</a>
-            <a href="#contact" class="contact-us-nav-link">CONTACT US</a>
+            <a href="#testimonios">TESTIMONIOS</a>
+            <a href="./contact.html" class="contact-us-nav-link">CONTACT US</a>
         </nav>
         <a href="#" class="cta-button header-cta" id="openQuoteFormBtn">
             Cotizar Ahora <span class="arrow">➔</span>
@@ -211,68 +211,99 @@
                     </div>
                 </div>
                 <div class="gallery-cta-container">
-                    <a href="#full-gallery" class="gallery-cta-button">Ver Galería Completa de Proyectos</a>
+                    <a href="./gallery.html" class="gallery-cta-button">Ver Galería Completa de Proyectos</a>
                 </div>
             </div>
-        </section>
-
-        <section class="testimonials-section" id="testimonials">
+        </section>        <section class="testimonials-section" id="testimonios">
             <div class="container">
-                <p class="eyebrow-text text-center">TESTIMONIOS</p>
-                <h2 class="section-title text-center">Lo Que Nuestros Clientes Dicen</h2>
+                <p class="eyebrow-text text-center">RESEÑAS DE CLIENTES</p>
+                <h2 class="section-title text-center">Lo Que Opinan Nuestros Clientes</h2>
                 <p class="section-description text-center">
-                    La satisfacción de nuestros clientes es nuestra mayor recompensa. Aquí algunas opiniones sobre
-                    nuestro trabajo.
+                    La satisfacción de nuestros clientes es nuestra mayor recompensa. Estas son algunas de las reseñas verificadas que nuestros clientes nos han dejado en Google.
                 </p>
+                
+                <div class="google-reviews-header">
+                    <div class="google-reviews-summary">
+                        <img src="./google.png" alt="Google Reviews Logo" class="google-reviews-logo">
+                        <div class="google-rating-summary">
+                            <div class="google-rating-average">4.9</div>
+                            <div class="google-rating-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <div class="google-rating-count">Basado en 28 reseñas</div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
-                        <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <p class="testimonial-text">"El equipo de Acosta Flooring fue excepcional. Desde el presupuesto
-                            hasta la instalación final, todo fue profesional y el resultado superó nuestras
-                            expectativas. ¡Nuestro nuevo piso de madera es hermoso!"</p>
-                        <div class="testimonial-author">
-                            <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/google_logo_icon_147285.png"
-                                alt="Google Logo" class="source-icon">
-                            <div class="author-details">
-                                <span class="author-name">Laura Martínez</span>
-                                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                </div>
+                        <div class="testimonial-header">
+                            <div class="testimonial-author-avatar">LM</div>
+                            <div class="testimonial-author-info">
+                                <div class="testimonial-author-name">Laura Martínez</div>
+                                <div class="testimonial-date">hace 2 semanas</div>
                             </div>
                         </div>
+                        
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        
+                        <p class="testimonial-text">"El equipo de Acosta Flooring fue excepcional. Desde el presupuesto hasta la instalación final, todo fue profesional y el resultado superó nuestras expectativas. ¡Nuestro nuevo piso de madera es hermoso!"</p>
+                        
+                        <div class="testimonial-footer">
+                            <img src="./google.png" alt="Google Reviews" class="google-icon">
+                        </div>
                     </div>
+                    
                     <div class="testimonial-card">
-                        <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <p class="testimonial-text">"Contratamos a Acosta Flooring para un proyecto comercial y quedamos
-                            impresionados con su eficiencia y la calidad del trabajo. Cumplieron con los plazos y el
-                            presupuesto. Altamente recomendados."</p>
-                        <div class="testimonial-author">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/600px-Facebook_f_logo_%282019%29.svg.png"
-                                alt="Facebook Logo" class="source-icon">
-                            <div class="author-details">
-                                <span class="author-name">Carlos Rodríguez</span>
-                                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star-half-alt"></i></div>
+                        <div class="testimonial-header">
+                            <div class="testimonial-author-avatar">CR</div>
+                            <div class="testimonial-author-info">
+                                <div class="testimonial-author-name">Carlos Rodríguez</div>
+                                <div class="testimonial-date">hace 1 mes</div>
                             </div>
                         </div>
+                        
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        
+                        <p class="testimonial-text">"Contratamos a Acosta Flooring para un proyecto comercial y quedamos impresionados con su eficiencia y la calidad del trabajo. Cumplieron con los plazos y el presupuesto. Altamente recomendados."</p>
+                        
+                        <div class="testimonial-footer">
+                            <img src="./google.png" alt="Google Reviews" class="google-icon">
+                        </div>
                     </div>
+                    
                     <div class="testimonial-card">
-                        <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
-                        <p class="testimonial-text">"¡Increíble transformación! Acosta Flooring renovó por completo el
-                            piso de nuestra casa. Son atentos, detallistas y el precio fue justo. Definitivamente los
-                            volveremos a llamar para futuros proyectos."</p>
-                        <div class="testimonial-author">
-                            <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/google_logo_icon_147285.png"
-                                alt="Google Logo" class="source-icon">
-                            <div class="author-details">
-                                <span class="author-name">Ana Gómez</span>
-                                <div class="star-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                                </div>
+                        <div class="testimonial-header">
+                            <div class="testimonial-author-avatar">AG</div>
+                            <div class="testimonial-author-info">
+                                <div class="testimonial-author-name">Ana Gómez</div>
+                                <div class="testimonial-date">hace 3 meses</div>
                             </div>
                         </div>
+                        
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        
+                        <p class="testimonial-text">"¡Increíble transformación! Acosta Flooring renovó por completo el piso de nuestra casa. Son atentos, detallistas y el precio fue justo. Definitivamente los volveremos a llamar para futuros proyectos."</p>
+                        
+                        <div class="testimonial-footer">
+                            <img src="./google.png" alt="Google Reviews" class="google-icon">
+                        </div>
                     </div>
+                </div>
+                
+                <div class="google-reviews-cta">
+                    <a href="https://g.page/r/acosta-flooring/review" target="_blank" class="google-review-button">
+                        <i class="fas fa-edit"></i> Escribir una reseña
+                    </a>
+                    <!-- <a href="https://g.page/acosta-flooring/reviews" target="_blank" class="google-review-link">
+                        Ver todas las reseñas en Google
+                    </a> -->
                 </div>
             </div>
         </section>
@@ -305,13 +336,12 @@
                 </div>
             </div>
             <div class="footer-column footer-links">
-                <h4>Enlaces Rápidos</h4>
-                <ul>
+                <h4>Enlaces Rápidos</h4>                <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">Sobre Nosotros</a></li>
                     <li><a href="#services">Servicios</a></li>
                     <li><a href="#gallery">Galería</a></li>
-                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
                 </ul>
             </div>
             <div class="footer-column footer-contact">
